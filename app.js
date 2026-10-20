@@ -1,7 +1,7 @@
 /* Configuration: see SETUP.md. A Google OAuth client ID is public, but must be
    restricted to this site's GitHub Pages URL in Google Cloud Console. */
 const CONFIG = {
-  googleClientId: 'PASTE_YOUR_GOOGLE_OAUTH_CLIENT_ID.apps.googleusercontent.com',
+  googleClientId: '111711041242-r5dnuk0k9ueqabdipdh4raedt0lofpf2.apps.googleusercontent.com',
   driveFolderId: '1ibnzz1dmUOoxzwic8alT6WG3hEFgKj4r',
   scope: 'https://www.googleapis.com/auth/drive.file'
 };
