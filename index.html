@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#284b3c">
+  <title>My Life Stories</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <header>
+      <p class="eyebrow">MY LIFE STORIES</p>
+      <h1>Tell a story, one memory at a time.</h1>
+      <p class="intro">Your recording stays on this phone until you choose to save it. When you save, it is placed in the family Google Drive folder.</p>
+    </header>
+
+    <section class="card" aria-labelledby="record-heading">
+      <h2 id="record-heading">Record a memory</h2>
+      <label for="storyTitle">What is this story about?</label>
+      <input id="storyTitle" type="text" maxlength="80" placeholder="For example: My first job">
+      <p id="timer" class="timer" aria-live="off">00:00</p>
+      <div class="recording-actions">
+        <button id="recordButton" class="primary" type="button">Start recording</button>
+        <button id="stopButton" type="button" disabled>Stop</button>
+      </div>
+      <p id="recordingStatus" class="status" aria-live="polite">Ready when you are.</p>
+    </section>
+
+    <section id="reviewCard" class="card hidden" aria-labelledby="review-heading">
+      <h2 id="review-heading">Listen before saving</h2>
+      <audio id="audioPlayer" controls></audio>
+      <div class="save-actions">
+        <button id="saveButton" class="primary" type="button">Save to family Drive</button>
+        <button id="downloadButton" type="button">Download a copy</button>
+        <button id="newButton" type="button" class="quiet">Discard and record another</button>
+      </div>
+      <p id="saveStatus" class="status" aria-live="polite"></p>
+      <p id="driveLinkWrap" class="hidden"><a id="driveLink" target="_blank" rel="noopener">Open saved recording in Google Drive</a></p>
+    </section>
+
+    <section class="help" aria-labelledby="help-heading">
+      <h2 id="help-heading">A little reassurance</h2>
+      <p>You can listen before saving. If saving ever has a problem, use <strong>Download a copy</strong> so the recording remains safely on your phone.</p>
+    </section>
+  </main>
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+  <script src="app.js"></script>
+</body>
+</html>
