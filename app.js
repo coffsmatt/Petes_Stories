@@ -1,4 +1,4 @@
-const CONFIG={googleClientId:'PASTE_YOUR_GOOGLE_OAUTH_CLIENT_ID.apps.googleusercontent.com',driveFolderId:'1ibnzz1dmUOoxzwic8alT6WG3hEFgKj4r',scope:'https://www.googleapis.com/auth/drive.file'};
+const CONFIG={googleClientId:'111711041242-r5dnuk0k9ueqabdipdh4raedt0lofpf2.apps.googleusercontent.com',driveFolderId:'1ibnzz1dmUOoxzwic8alT6WG3hEFgKj4r',scope:'https://www.googleapis.com/auth/drive.file'};
 const MAX_SECONDS=1200, WARNING_SECONDS=new Set([1020,1080,1140,1170]), $=id=>document.getElementById(id);
 const recordButton=$('recordButton'),stopButton=$('stopButton'); let recorder,audioBlob,timerId,seconds=0,tokenClient,accessToken,audioContext;
 function setStatus(m){$('recordingStatus').textContent=m} function formatTime(v){return `${String(Math.floor(v/60)).padStart(2,'0')}:${String(v%60).padStart(2,'0')}`} function formatForBlob(b){return b.type.includes('ogg')?'ogg':b.type.includes('mp4')?'m4a':'webm'}
